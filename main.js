@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggler
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
-    const currentTheme = localStorage.getItem('theme');
+    
+    const setTheme = (theme) => {
+        document.body.classList.toggle('dark-theme', theme === 'dark-theme');
+        localStorage.setItem('theme', theme);
+    };
 
+    const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
-        document.body.classList.add(currentTheme);
+        setTheme(currentTheme);
     }
 
     themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
-        let theme = 'light-theme';
-        if (document.body.classList.contains('dark-theme')) {
-            theme = 'dark-theme';
-        }
-        localStorage.setItem('theme', theme);
+        const newTheme = document.body.classList.contains('dark-theme') ? 'light-theme' : 'dark-theme';
+        setTheme(newTheme);
     });
 
 

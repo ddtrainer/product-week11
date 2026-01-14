@@ -68,17 +68,30 @@ nav ul li a:hover {
 }
 
 #theme-toggle-btn {
-    background: var(--primary-color);
-    color: #fff;
+    background: transparent;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-#theme-toggle-btn:hover {
-    background-color: #0056b3;
+#theme-toggle-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-color);
+}
+
+.dark-theme .sun {
+    display: none;
+}
+
+.moon {
+    display: none;
+}
+
+.dark-theme .moon {
+    display: block;
 }
 
 .hamburger {
