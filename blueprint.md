@@ -1,23 +1,45 @@
-# Project Blueprint
+# Project Blueprint: Lotto Number Generator Website
 
-## Overview
+This document outlines the plan to improve the Lotto Number Generator website to meet the quality standards for Google AdSense approval.
 
-This document outlines the structure, features, and implementation plan for the web application.
+## 1. Current State
 
-## Current State
+The website is a simple, single-page application that generates random lottery numbers. It lacks the content, structure, and user engagement required for AdSense approval.
 
-### Features
-- Basic HTML structure
-- Basic styling
+## 2. High-Level Goals
 
-## Plan for Dark/White Mode
+*   Transform the website from a simple tool into a content-rich resource for lottery enthusiasts.
+*   Meet and exceed the Google AdSense guidelines for high-quality websites.
+*   Create a professional, user-friendly, and engaging experience.
 
-1.  **Modify `style.css`:**
-    *   Define color palettes for both light and dark themes using CSS variables.
-    *   Create a `[data-theme='dark']` selector to apply the dark theme.
-2.  **Modify `index.html`:**
-    *   Add a button or toggle switch to allow users to switch between themes.
-3.  **Modify `main.js`:**
-    *   Implement a script to handle the theme-switching logic.
-    *   Use `localStorage` to save the user's theme preference.
-    *   Apply the saved theme on page load.
+## 3. Detailed Plan
+
+### Phase 1: Core Structure and Content (Completed)
+
+*   **[x] Create a multi-page structure:**
+    *   `index.html` (Home/Generator)
+    *   `about.html`
+    *   `articles.html`
+    *   `privacy.html`
+    *   `terms.html`
+*   **[x] Implement a consistent navigation bar and footer.**
+*   **[x] Enhance the UI/UX with a professional design and responsive layout.**
+*   **[x] Add initial content:**
+    *   `about.html`: Information about lotteries and the site's purpose.
+    *   `privacy.html` and `terms.html`: Basic privacy policy and terms of service.
+
+### Phase 2: Feature Enhancement (Completed)
+
+*   **[x] Improve the Lotto Generator:**
+    *   Add options for different lottery games.
+    *   Display mock past winning numbers.
+    *   Provide basic number statistics.
+*   **[x] Add more content:**
+    *   `articles.html`: Add 1-2 articles about lottery strategies or stories.
+
+### Phase 3: Final Touches (Completed)
+
+*   **[x] Refine the design and user experience.**
+*   **[x] Review all content for quality and originality.**
+*   **[x] Ensure all pages are mobile-friendly.**
+*   **[x] Prepare for AdSense submission.**

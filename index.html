@@ -3,20 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Lotto Number Generator - Win Big!</title>
+    <meta name="description" content="Generate your lucky lottery numbers for various games, get statistics, and read about lottery strategies.">
     <meta name="google-adsense-account" content="ca-pub-8070613975333047">
     <link rel="stylesheet" href="style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8070613975333047"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8070613975333047" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle-btn">Toggle Theme</button>
-        <h1>Lotto Number Generator</h1>
-        <div class="lotto-numbers">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LottoGen</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <button id="theme-toggle-btn">Toggle Theme</button>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Your Lucky Number Generator</h1>
+            <p>Generate random numbers for your favorite lotteries and increase your chances of winning!</p>
+        </section>
+
+        <section class="generator">
+            <h2>Generate Your Numbers</h2>
+            <div class="game-selector">
+                <label for="lotto-game">Choose a lottery game:</label>
+                <select id="lotto-game">
+                    <option value="korea-lotto">Korean Lotto 6/45</option>
+                    <option value="powerball">US Powerball 5/69 + 1/26</option>
+                </select>
+            </div>
+            <div class="lotto-numbers">
+                <!-- Numbers will be generated here -->
+            </div>
+            <button id="generate-btn">Generate Numbers</button>
+        </section>
+
+        <section class="stats">
+            <h2>Statistics</h2>
+            <div id="stats-content">
+                <!-- Stats will be generated here -->
+            </div>
+        </section>
+
+        <section class="past-winners">
+            <h2>Past Winning Numbers (Mock Data)</h2>
+            <div id="past-winners-content">
+                <!-- Past winners will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 LottoGen. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
         </div>
-        <button id="generate-btn">Generate Numbers</button>
-    </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
